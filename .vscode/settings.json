@@ -1,0 +1,46 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "Other": true,
+        "**/*.lnk": true,
+        "**/*.blg": true,
+        "**/*.aux": true,
+        "**/*.bbl": true,
+        "**/*.lof": true,
+        "**/*.fls": true,
+        "**/*.lot": true,
+        "**/*.toc": true,
+        "**/*.out": true,
+        "**/*.snm": true,
+        "**/*.nav": true,
+        "**/*.vrb": true,
+        "**/*.fdb_latexmk": true
+    },
+
+    "editor.minimap.enabled": false,
+
+    "gitlens.blame.line.enabled": false,
+    "cSpell.enabled": true,
+    "cSpell.language": "en,en-GB",
+    "cSpell.enabledLanguageIds": [
+        "cpp",
+        "csharp",
+        "go",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "latex",
+        "markdown",
+        "php",
+        "plaintext",
+        "python",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yml"
+    ]
+}

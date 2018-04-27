@@ -1,0 +1,56 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "TeXcount Thesis",
+            "type": "shell",
+            "command": "cd Thesis; texcount -merge Main.tex",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Compile Cover",
+            "type": "shell",
+            "command": "cd Thesis/Cover && xelatex -interaction=nonstopmode -file-line-error -pdf Front",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Compile All",
+            "type": "shell",
+            "command": "cd Thesis && latexmk -interaction=nonstopmode -file-line-error -pdf Main; latexmk -interaction=nonstopmode -file-line-error -pdf Print",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "dependsOn": ["Compile Cover"]
+        },
+        {
+            "label": "Compile Presentation",
+            "type": "shell",
+            "command": "cd Presentation; xelatex -interaction=nonstopmode -file-line-error presentation",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
