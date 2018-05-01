@@ -10,6 +10,7 @@
 ## Chapters
 1. Introduction
 2. Kerr black hole
+    - Symmetries
     - (...)
 3. Teukolsky master equation
     - Newman-Penrose formalism
